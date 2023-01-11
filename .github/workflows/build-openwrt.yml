@@ -65,11 +65,11 @@ jobs:
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
-        cd openwrt
+        cd openwrt && rm -rf feeds/luci/applications/luci-app-mosdns && rm -rf feeds/packages/net/mosdns
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns && rm -rf feeds/packages/net/mosdns
+      run: cd openwrt && ./scripts/feeds update -a 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
