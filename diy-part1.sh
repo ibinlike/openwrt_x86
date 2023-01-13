@@ -22,7 +22,10 @@
 echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
 echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
 # echo 'src-git Openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
-echo "src-git Mosdns https://github.com/QiuSimons/openwrt-mos" >> feeds.conf.default
+# echo "src-git Mosdns https://github.com/QiuSimons/openwrt-mos" >> feeds.conf.default
+
+git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 
 
