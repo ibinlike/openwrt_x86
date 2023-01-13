@@ -65,7 +65,7 @@ jobs:
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
-        cd openwrt && rm -rf feeds/luci/applications/luci-app-mosdns && rm -rf feeds/packages/net/mosdns
+        cd openwrt && rm -rf feeds/luci/applications/luci-app-mosdns && rm -rf feeds/packages/net/mosdns && rm -rf feeds/packages/net/v2ray-geodata
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
