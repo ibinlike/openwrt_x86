@@ -25,7 +25,7 @@ echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> 
 # echo "src-git Mosdns https://github.com/QiuSimons/openwrt-mos" >> feeds.conf.default
 
 git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+git clone https://github.com/Loyalsoldier/v2ray-rules-dat package/v2ray-geodata
 
 
 
