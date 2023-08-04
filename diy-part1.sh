@@ -16,7 +16,10 @@
 # Add a feed source
 
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
-
+sudo rm -rf /usr/share/dotnet
+sudo rm -rf /opt/ghc
+sudo rm -rf "/usr/local/share/boost"
+sudo rm -rf "$AGENT_TOOLSDIRECTORY"
 
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
