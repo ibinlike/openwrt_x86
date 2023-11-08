@@ -20,7 +20,7 @@ sudo rm -rf /usr/share/dotnet
 sudo rm -rf /opt/ghc
 sudo rm -rf "/usr/local/share/boost"
 sudo rm -rf "$AGENT_TOOLSDIRECTORY"
-sudo rm -rf feeds/packages/net/v2ray-geodata
+
 
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
