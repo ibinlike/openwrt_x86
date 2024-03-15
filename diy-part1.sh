@@ -20,6 +20,9 @@ sudo rm -rf /usr/share/dotnet
 sudo rm -rf /opt/ghc
 sudo rm -rf "/usr/local/share/boost"
 sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+sudo rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
+sudo rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 
 
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
